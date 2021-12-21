@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://localhost:3000/pages/forms/basic-forms.html -->
+<html lang="en" class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Required meta tags -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Material Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../node_modules/mdi/css/materialdesignicons.min.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="http://localhost:3000/images/favicon.png">
+</head>
+
+<body data-gr-c-s-loaded="true"><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.23.1'><\/script>".replace("HOST", location.hostname));
+//]]></script><script async="" src="./Material Admin_files/browser-sync-client.js"></script>
+
+  <div class="body-wrapper">
+    <!-- partial:../../partials/_sidebar.html -->
+    <aside class="mdc-persistent-drawer mdc-persistent-drawer--open">
+      <nav class="mdc-persistent-drawer__drawer">
+        <div class="mdc-persistent-drawer__toolbar-spacer">
+          <a href="index.html" class="brand-logo">
+						<img src="images/logo.svg" alt="logo">
+					</a>
+        </div>
+        <div class="mdc-list-group">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="index.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">desktop_mac</i>
+                Dashboard
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="pages/forms/basic-forms.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                Forms
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="ui-sub-menu">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+                UI Features
+                <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+              </a>
+              <div class="mdc-expansion-panel" id="ui-sub-menu">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/ui-features/buttons.html">
+                      Buttons
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/ui-features/typography.html">
+                      Typography
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="pages/ui-features/tables.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
+                Tables
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="pages/charts/chartjs.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+                Charts
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="sample-page-submenu">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
+                Sample Pages
+                <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+              </a>
+              <div class="mdc-expansion-panel" id="sample-page-submenu">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/samples/blank-page.html">
+                      Blank Page
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/samples/403.html">
+                      403
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/samples/404.html">
+                      404
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/samples/500.html">
+                      500
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/samples/505.html">
+                      505
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/samples/login.html">
+                      Login
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/samples/register.html">
+                      Register
+                    </a>
+                  </div>
+
+                </nav>
+              </div>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item purchase-link">
+              <a href="#product/material-admin/" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense mdc-drawer-link" data-mdc-auto-init="MDCRipple">
+                Upgrade To Pro
+              </a>
+            </div>
+          </nav>
+        </div>
+      </nav>
+    </aside>
+    <!-- partial -->
+    <div class="page-wrapper">
+      <!-- partial:../../partials/_navbar.html -->
+      <header class="mdc-toolbar mdc-elevation--z4 mdc-toolbar--fixed">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <a href="#" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
+          <span class="mdc-toolbar__input">
+            <div class="mdc-text-field">
+              <input type="text" class="mdc-text-field__input" id="css-only-text-field-box" placeholder="Search anything...">
+            </div>
+          </span>
+        </section>
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+          <div class="mdc-menu-anchor">
+            <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="notification-menu" data-mdc-auto-init="MDCRipple">
+              <i class="material-icons">notifications</i>
+              <span class="dropdown-count">3</span>
+            </a>
+            <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="notification-menu">
+              <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                <li class="mdc-list-item" role="menuitem" tabindex="0">
+                  <i class="material-icons mdc-theme--primary mr-1">email</i>
+                  One unread message
+                </li>
+                <li class="mdc-list-item" role="menuitem" tabindex="0">
+                  <i class="material-icons mdc-theme--primary mr-1">group</i>
+                  One event coming up
+                </li>
+                <li class="mdc-list-item" role="menuitem" tabindex="0">
+                  <i class="material-icons mdc-theme--primary mr-1">cake</i>
+                  It's Aleena's birthday!
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdc-menu-anchor">
+            <a href="#" class="mdc-toolbar__icon mdc-ripple-surface" data-mdc-auto-init="MDCRipple">
+              <i class="material-icons">widgets</i>
+            </a>
+          </div>
+          <div class="mdc-menu-anchor mr-1">
+            <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="logout-menu" data-mdc-auto-init="MDCRipple">
+              <i class="material-icons">more_vert</i>
+            </a>
+            <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="logout-menu">
+                <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                  <li class="mdc-list-item" role="menuitem" tabindex="0">
+                    <i class="material-icons mdc-theme--primary mr-1">settings</i>
+                    Settings
+                  </li>
+                  <li class="mdc-list-item" role="menuitem" tabindex="0">
+                    <i class="material-icons mdc-theme--primary mr-1">power_settings_new</i>
+                    Logout
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+      <!-- partial -->
+      <main class="content-wrapper">
+        <div class="mdc-layout-grid">
+          <h1 class="mdc-typography--display1">Ripple Enabled</h1>
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+              <div class="mdc-card">
+                <section class="mdc-card__primary">
+                  <h1 class="mdc-card__title mdc-card__title--large">Switch</h1>
+                </section>
+                <section class="mdc-card__supporting-text">
+                  <div class="template-demo">
+                    <div class="mdc-switch">
+                      <input type="checkbox" id="basic-switch" class="mdc-switch__native-control">
+                      <div class="mdc-switch__background">
+                        <div class="mdc-switch__knob"></div>
+                      </div>
+                    </div>
+                    <div class="mdc-switch mdc-switch--disabled">
+                      <input type="checkbox" id="another-basic-switch" class="mdc-switch__native-control" disabled="">
+                      <div class="mdc-switch__background">
+                        <div class="mdc-switch__knob"></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+              <div class="mdc-card">
+                <section class="mdc-card__primary">
+                  <h1 class="mdc-card__title mdc-card__title--large">Select Menu</h1>
+                </section>
+                <section class="mdc-card__supporting-text">
+                  <div class="template-demo">
+                    <div id="hero-js-select" class="mdc-select" role="listbox">
+                      <div class="mdc-select__surface mdc-ripple-upgraded" tabindex="0" style="width: 394px; --mdc-ripple-fg-size:261.6px; --mdc-ripple-fg-scale:1.71858;">
+                        <div class="mdc-select__label">Pick a Food Group</div>
+                        <div class="mdc-select__selected-text"></div>
+                        <div class="mdc-select__bottom-line"></div>
+                      </div>
+                      <div class="mdc-simple-menu mdc-select__menu">
+                        <ul class="mdc-list mdc-simple-menu__items">
+                          <li class="mdc-list-item" role="option" tabindex="0">
+                            Bread, Cereal, Rice, and Pasta
+                          </li>
+                          <li class="mdc-list-item" role="option" tabindex="0">
+                            Vegetables
+                          </li>
+                          <li class="mdc-list-item" role="option" tabindex="0">
+                            Fruit
+                          </li>
+                          <li class="mdc-list-item" role="option" tabindex="0">
+                            Milk, Yogurt, and Cheese
+                          </li>
+                          <li class="mdc-list-item" role="option" tabindex="0">
+                            Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
+                          </li>
+                          <li class="mdc-list-item" role="option" tabindex="0">
+                            Fats, Oils, and Sweets
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+              <div class="mdc-card">
+                <section class="mdc-card__primary">
+                  <h1 class="mdc-card__title mdc-card__title--large">Text Field</h1>
+                </section>
+                <section class="mdc-card__supporting-text">
+                  <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+                      <div class="template-demo">
+                        <div id="demo-tf-box-wrapper w-100">
+                          <div id="tf-box-example" class="mdc-text-field mdc-text-field--box mdc-text-field--upgraded mdc-ripple-upgraded mdc-ripple-upgraded--background-active-fill mdc-ripple-upgraded--foreground-activation mdc-text-field--invalid" data-demo-no-auto-js="" style="--mdc-ripple-fg-size:126px; --mdc-ripple-fg-scale:1.80427; --mdc-ripple-fg-translate-start:111px, -21px; --mdc-ripple-fg-translate-end:42px, -35px;">
+                            <input required="" pattern=".{8,}" type="text" id="tf-box" class="mdc-text-field__input w-100" aria-controls="name-validation-message">
+                            <label for="tf-box" class="mdc-text-field__label mdc-text-field__label--shake">Your Name</label>
+                            <div class="mdc-text-field__bottom-line" style="transform-origin: 174px center"></div>
+                          </div>
+                          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" id="name-validation-msg">
+                            Must be at least 8 characters
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+                      <div class="template-demo">
+                        <div class="mdc-text-field mdc-text-field--box w-100">
+                          <input type="text" class="mdc-text-field__input" id="css-only-text-field-box" placeholder="Name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+                      <div class="template-demo">
+                        <div id="tf-box-leading-example" class="mdc-text-field mdc-text-field--box mdc-text-field--with-leading-icon w-100">
+                          <i class="material-icons mdc-text-field__icon" tabindex="0">event</i>
+                          <input type="text" id="tf-box-leading" class="mdc-text-field__input">
+                          <label for="tf-box-leading" class="mdc-text-field__label">Your name</label>
+                          <div class="mdc-text-field__bottom-line"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+              <div class="mdc-card">
+                <section class="mdc-card__primary">
+                  <h1 class="mdc-card__title mdc-card__title--large">Checkbox</h1>
+                </section>
+                <section class="mdc-card__supporting-text">
+                  <div class="template-demo">
+                    <div class="mdc-form-field">
+                      <div class="mdc-checkbox">
+                        <input type="checkbox" id="basic-checkbox" class="mdc-checkbox__native-control">
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                      </div>
+                      <label for="basic-checkbox">Default</label>
+                    </div>
+                    <div class="mdc-form-field">
+                      <div class="mdc-checkbox mdc-checkbox--disabled">
+                        <input type="checkbox" id="basic-disabled-checkbox" class="mdc-checkbox__native-control" disabled="">
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                      </div>
+                      <label for="basic-disabled-checkbox">Disabled</label>
+                    </div>
+                    <div class="mdc-form-field">
+                      <div class="mdc-checkbox">
+                        <input type="checkbox" id="basic-indeterminate-checkbox" class="mdc-checkbox__native-control">
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                      </div>
+                      <label for="basic-indeterminate-checkbox">Indeterminate</label>
+                    </div>
+                    <div class="mdc-form-field">
+                      <div class="mdc-checkbox demo-checkbox--custom-all">
+                        <input type="checkbox" id="basic-custom-checkbox-all" class="mdc-checkbox__native-control">
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path" dropzone="" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                      </div>
+                      <label for="basic-custom-checkbox-all">Custom colored</label>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+              <div class="mdc-card">
+                <section class="mdc-card__primary">
+                  <h1 class="mdc-card__title mdc-card__title--large">Radio</h1>
+                </section>
+                <section class="mdc-card__supporting-text">
+                  <div class="template-demo">
+                    <div class="mdc-form-field">
+                      <div class="mdc-radio mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" style="--mdc-ripple-fg-size:24px; --mdc-ripple-fg-scale:2.77369;">
+                        <input class="mdc-radio__native-control" type="radio" id="ex0-default-radio1" checked="" name="ex0-default">
+                        <div class="mdc-radio__background">
+                          <div class="mdc-radio__outer-circle"></div>
+                          <div class="mdc-radio__inner-circle"></div>
+                        </div>
+                      </div>
+                      <label id="ex0-default-radio1-label" for="ex0-default-radio1">Default Radio 1</label>
+                    </div>
+                    <div class="mdc-form-field">
+                      <div class="mdc-radio mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" style="--mdc-ripple-fg-size:24px; --mdc-ripple-fg-scale:2.77369;">
+                        <input class="mdc-radio__native-control" type="radio" id="ex0-default-radio2" name="ex0-default">
+                        <div class="mdc-radio__background">
+                          <div class="mdc-radio__outer-circle"></div>
+                          <div class="mdc-radio__inner-circle"></div>
+                        </div>
+                      </div>
+                      <label id="ex0-default-radio2-label" for="ex0-default-radio2">Default Radio 2</label>
+                    </div>
+                    <div class="mdc-form-field">
+                      <div class="mdc-radio demo-radio--custom">
+                        <input class="mdc-radio__native-control" type="radio" id="ex1-custom-radio1" checked="" name="ex1-custom">
+                        <div class="mdc-radio__background">
+                          <div class="mdc-radio__outer-circle"></div>
+                          <div class="mdc-radio__inner-circle"></div>
+                        </div>
+                      </div>
+                      <label id="ex1-custom-radio1-label" for="ex1-custom-radio1">Custom Radio 1</label>
+                    </div>
+                    <div class="mdc-form-field">
+                      <div class="mdc-radio demo-radio--custom">
+                        <input class="mdc-radio__native-control" type="radio" id="ex1-custom-radio2" name="ex1-custom">
+                        <div class="mdc-radio__background">
+                          <div class="mdc-radio__outer-circle"></div>
+                          <div class="mdc-radio__inner-circle"></div>
+                        </div>
+                      </div>
+                      <label id="ex1-custom-radio2-label" for="ex1-custom-radio2">Custom Radio 2</label>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+              <div class="mdc-card">
+                <section class="mdc-card__primary">
+                  <h1 class="mdc-card__title mdc-card__title--large">Slider</h1>
+                </section>
+                <section class="mdc-card__supporting-text">
+                  <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                      <h3 class="mdc-card__title mdc-card__title">Basic Slider</h3>
+                      <div class="template-demo">
+                        <div id="continuous-mdc-slider" class="mdc-slider" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="50" aria-valuenow="20" aria-label="Select Value" data-mdc-auto-init="MDCSlider">
+                          <div class="mdc-slider__track-container">
+                            <div class="mdc-slider__track" style="transform: scaleX(0.4);"></div>
+                          </div>
+                          <div class="mdc-slider__thumb-container" style="transform: translateX(239.363px) translateX(-50%);">
+                            <svg class="mdc-slider__thumb" width="21" height="21">
+                              <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                            </svg>
+                            <div class="mdc-slider__focus-ring"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                      <h3 class="mdc-card__title mdc-card__title">Discrete Slider with Tick Marks</h3>
+                      <div class="template-demo">
+                        <div id="discrete-mdc-slider" class="mdc-slider mdc-slider--discrete" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="50" aria-valuenow="20" aria-label="Select Value" data-mdc-auto-init="MDCSlider">
+                          <div class="mdc-slider__track-container">
+                            <div class="mdc-slider__track" style="transform: scaleX(0.4);"></div>
+                          </div>
+                          <div class="mdc-slider__thumb-container" style="transform: translateX(239.363px) translateX(-50%);">
+                            <div class="mdc-slider__pin">
+                              <span class="mdc-slider__pin-value-marker">20</span>
+                            </div>
+                            <svg class="mdc-slider__thumb" width="21" height="21">
+                              <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                            </svg>
+                            <div class="mdc-slider__focus-ring"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                      <h3 class="mdc-card__title mdc-card__title">Discrete Slider with Tick Marks</h3>
+                      <div class="template-demo">
+                        <div id="discrete-mdc-slider-w-marker" class="mdc-slider mdc-slider--discrete mdc-slider--display-markers" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="50" aria-valuenow="20" aria-label="Select Value" data-mdc-auto-init="MDCSlider">
+                          <div class="mdc-slider__track-container">
+                            <div class="mdc-slider__track" style="transform: scaleX(0.4);"></div>
+                            <div class="mdc-slider__track-marker-container"><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div></div>
+                          </div>
+                          <div class="mdc-slider__thumb-container" style="transform: translateX(239.363px) translateX(-50%);">
+                            <div class="mdc-slider__pin">
+                              <span class="mdc-slider__pin-value-marker">20</span>
+                            </div>
+                            <svg class="mdc-slider__thumb" width="21" height="21">
+                              <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                            </svg>
+                            <div class="mdc-slider__focus-ring"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                      <h3 class="mdc-card__title mdc-card__title">Custom Colored Discrete Slider with Tick Marks</h3>
+                      <div class="template-demo">
+                        <div id="custom-discrete-mdc-slider-w-marker" class="mdc-slider mdc-slider--discrete mdc-slider--display-markers demo-slider--custom" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="50" aria-valuenow="20" aria-label="Select Value" data-mdc-auto-init="MDCSlider">
+                          <div class="mdc-slider__track-container">
+                            <div class="mdc-slider__track" style="transform: scaleX(0.4);"></div>
+                            <div class="mdc-slider__track-marker-container"><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div><div class="mdc-slider__track-marker"></div></div>
+                          </div>
+                          <div class="mdc-slider__thumb-container" style="transform: translateX(239.363px) translateX(-50%);">
+                            <div class="mdc-slider__pin">
+                              <span class="mdc-slider__pin-value-marker">20</span>
+                            </div>
+                            <svg class="mdc-slider__thumb" width="21" height="21">
+                              <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                            </svg>
+                            <div class="mdc-slider__focus-ring"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <hr class="mdc-list-divider">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, libero.</p>
+      </footer>
+    </div>
+  </div>
+  <!-- body wrapper -->
+  <!-- plugins:js -->
+  <script src="../../node_modules/material-components-web/dist/material-components-web.min.js"></script>
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../js/misc.js"></script>
+  <script src="../../js/material.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+
+
+</body></html>

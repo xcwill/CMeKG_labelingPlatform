@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>实体关系标注平台v2.0</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/materialdesignicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" />
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+    <aside class="mdc-persistent-drawer mdc-persistent-drawer--open">
+      <nav class="mdc-persistent-drawer__drawer">
+        <div class="mdc-persistent-drawer__toolbar-spacer">
+          <a href="/main" class="brand-logo">
+						<img src="{{ url_for('static', filename='images/logo.svg') }}" alt="logo">
+					</a>
+        </div>
+        <div class="mdc-list-group">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="/main">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">desktop_mac</i>
+                主页
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="/data">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+                数据管理
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="ui-sub-menu">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">colorize</i>
+                数据标注
+                <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+              </a>
+              <div class="mdc-expansion-panel" id="ui-sub-menu">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="/task">
+                        <i class="fa fa-list-alt fa-lg" style="margin-right: 12%"></i>
+                      任务管理
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="/group">
+                        <i class="fa fa-group fa-lg" style="margin-right: 12%"></i>
+                      分组管理
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="sample-page-submenu">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">insert_chart</i>
+                数据分析
+                <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+              </a>
+              <div class="mdc-expansion-panel" id="sample-page-submenu">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="/table_page">
+                      <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
+                      表格分析
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/samples/403.html">
+                      <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+                      图表分析
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/samples/404.html">
+                      <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">device_hub</i>
+                      图谱分析
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">domain</i>
+                词典管理
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">data_usage</i>
+                模型管理
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item purchase-link">
+              <a href="/download" class="mdc-button mdc-button--raised mdc-button--dense mdc-drawer-link" data-mdc-auto-init="MDCRipple">
+                数据导出
+              </a>
+            </div>
+          </nav>
+        </div>
+      </nav>
+    </aside>
+    <!-- partial -->
+    <!-- partial:partials/_navbar.html -->
+    <header class="mdc-toolbar mdc-elevation--z4 mdc-toolbar--fixed">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <a href="#" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
+          <span class="mdc-toolbar__input">
+            <div class="mdc-text-field">
+              <input type="text" class="mdc-text-field__input" id="css-only-text-field-box" placeholder="搜索">
+            </div>
+          </span>
+        </section>
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+          <div class="mdc-menu-anchor">
+            <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="notification-menu" data-mdc-auto-init="MDCRipple">
+              <i class="material-icons">notifications</i>
+              <span class="dropdown-count">3</span>
+            </a>
+            <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="notification-menu">
+              <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                <li class="mdc-list-item" role="menuitem" tabindex="0">
+                  <i class="material-icons mdc-theme--primary mr-1">email</i>
+                  One unread message
+                </li>
+                <li class="mdc-list-item" role="menuitem" tabindex="0">
+                  <i class="material-icons mdc-theme--primary mr-1">group</i>
+                  One event coming up
+                </li>
+                <li class="mdc-list-item" role="menuitem" tabindex="0">
+                  <i class="material-icons mdc-theme--primary mr-1">cake</i>
+                  It's Aleena's birthday!
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdc-menu-anchor">
+            <a href="#" class="mdc-toolbar__icon mdc-ripple-surface" data-mdc-auto-init="MDCRipple">
+              <i class="material-icons">widgets</i>
+            </a>
+          </div>
+          <div class="mdc-menu-anchor mr-1">
+            <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="logout-menu" data-mdc-auto-init="MDCRipple">
+              <i class="material-icons">more_vert</i>
+            </a>
+            <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="logout-menu">
+                <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                  <li class="mdc-list-item" role="menuitem" tabindex="0">
+                    欢迎您！  {{ current_user.username }}({{ current_user.role }})
+                  </li>
+                  <li class="mdc-list-item" role="menuitem" tabindex="0">
+                    <i class="material-icons mdc-theme--primary mr-1">settings</i>
+                    Settings
+                  </li>
+                  <li class="mdc-list-item" role="menuitem" tabindex="0">
+                    <i class="material-icons mdc-theme--primary mr-1">power_settings_new</i>
+                    <a style="text-decoration: none" href="/logout">退出登录</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- partial -->
+    <div class="page-wrapper mdc-toolbar-fixed-adjust">
+      <main class="content-wrapper">
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
+              <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                  <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                    <div class="mdc--tile mdc--tile-danger rounded">
+                      <i class="mdi mdi-account-settings text-white icon-md"></i>
+                    </div>
+                    <div class="text-wrapper pl-1">
+                      <h3 class="mdc-typography--display1 font-weight-bold mb-1">7459</h3>
+                      <p class="font-weight-normal mb-0 mt-0">New projects</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                  <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                    <div class="mdc--tile mdc--tile-success rounded">
+                      <i class="mdi mdi-basket text-white icon-md"></i>
+                    </div>
+                    <div class="text-wrapper pl-1">
+                      <h3 class="mdc-typography--display1 font-weight-bold mb-1">$7783</h3>
+                      <p class="font-weight-normal mb-0 mt-0">Total Sales</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                  <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                    <div class="mdc--tile mdc--tile-warning rounded">
+                      <i class="mdi mdi-ticket text-white icon-md"></i>
+                    </div>
+                    <div class="text-wrapper pl-1">
+                      <h3 class="mdc-typography--display1 font-weight-bold mb-1">569</h3>
+                      <p class="font-weight-normal mb-0 mt-0">Open Tickets</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                  <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                    <div class="mdc--tile mdc--tile-primary rounded">
+                      <i class="mdi mdi-account-star text-white icon-md"></i>
+                    </div>
+                    <div class="text-wrapper pl-1">
+                      <h3 class="mdc-typography--display1 font-weight-bold mb-1">5785</h3>
+                      <p class="font-weight-normal mb-0 mt-0">New Visitors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+              <div class="mdc-card d-flex flex-column">
+                <div class="mdc-layout-grid__inner flex-grow-1">
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3"></div>
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center flex-column">
+                    <h2 class="mdc-card__title mdc-card__title--large text-center mt-2 mb-2">Time, Practice</h2>
+                    <div id="currentBalanceCircle" class="w-100"></div>
+                  </div>
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3"></div>
+                </div>
+                <div class="mdc-layout-grid__inner">
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                    <section class="mdc-card__action-footer mt-4 bg-red w-100">
+                      <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                        <i class="mdi mdi-store icon-md"></i>
+                      </div>
+                      <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                        <i class="mdi mdi-phone-plus icon-md"></i>
+                      </div>
+                      <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                        <i class="mdi mdi-share-variant icon-md"></i>
+                      </div>
+                      <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                        <i class="mdi mdi-autorenew icon-md"></i>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+              <div class="mdc-card card--with-avatar">
+                <section class="mdc-card__primary">
+                  <div class="card__avatar"><img src="{{ url_for('static', filename='images/faces/face1.jpg') }}" alt=""></div>
+                  <h1 class="mdc-card__title">Daniel Russel</h1>
+                  <h2 class="mdc-card__subtitle">@danielrussel</h2>
+                  <span class="social__icon-badge mdc-twitter mdi mdi-twitter"></span>
+                </section>
+                <section class="mdc-card__supporting-text pt-1">
+                  <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum sem non mauris euismod hendrerit.Aliquam condimentum sem non mauris euismod hendrerit.</p>
+                  <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum.</p>
+                </section>
+                <section class="mdc-card__social-footer bg-blue">
+                  <div class="col">
+                    <small>TWEETS</small>
+                    <p>768.8k</p>
+                  </div>
+                  <div class="col">
+                    <small>FOLLOWING</small>
+                    <p>186.8k</p>
+                  </div>
+                  <div class="col">
+                    <small>FOLLOWING</small>
+                    <p>25.8k</p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
+              <div class="mdc-card px-2 py-2">
+                <div id="js-legend" class="chartjs-legend mb-2"></div>
+                <canvas id="dashboard-monthly-analytics" height="205"></canvas>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+              <div class="mdc-card table-responsive">
+                <div class="table-heading px-2 px-1 border-bottom">
+                  <h1 class="mdc-card__title mdc-card__title--large">Employee status</h1>
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="text-left">Product</th>
+                      <th>Cost</th>
+                      <th>Sales amount</th>
+                      <th>Shipping cost</th>
+                      <th>Units sold</th>
+                      <th>Profit generated</th>
+                      <th>Left in stock</th>
+                      <th>Returns</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-left">T-shirts</td>
+                      <td>250</td>
+                      <td>300</td>
+                      <td>60</td>
+                      <td>3453</td>
+                      <td>76</td>
+                      <td>453643</td>
+                      <td>300</td>
+                      <td><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-heart text-blue"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-forum text-yellow"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-delete text-red"></i></div></td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Baseball Hat</td>
+                      <td>457</td>
+                      <td>204</td>
+                      <td>35</td>
+                      <td>6754</td>
+                      <td>35</td>
+                      <td>345623</td>
+                      <td>546</td>
+                      <td><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-heart text-blue"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-forum text-yellow"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-delete text-red"></i></div></td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Tennis Racket</td>
+                      <td>250</td>
+                      <td>350</td>
+                      <td>38</td>
+                      <td>3289</td>
+                      <td>45</td>
+                      <td>54662</td>
+                      <td>278</td>
+                      <td><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-heart text-blue"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-forum text-yellow"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-delete text-red"></i></div></td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Gloves</td>
+                      <td>250</td>
+                      <td>300</td>
+                      <td>60</td>
+                      <td>3453</td>
+                      <td>76</td>
+                      <td>453643</td>
+                      <td>300</td>
+                      <td><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-heart text-blue"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-forum text-yellow"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-delete text-red"></i></div></td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Shoes</td>
+                      <td>673</td>
+                      <td>457</td>
+                      <td>56</td>
+                      <td>4467</td>
+                      <td>98</td>
+                      <td>345723</td>
+                      <td>350</td>
+                      <td><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-heart text-blue"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-forum text-yellow"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-delete text-red"></i></div></td>
+                    </tr>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- partial:partials/_footer.html -->
+      <footer>
+        <div class="mdc-layout-grid">
+           <div class="mdc-layout-grid__inner">
+           <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3">
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+              <span class="text-center">Copyright © 2018 <a class="text-green" href="#" target="_blank">实体关系标注平台v2.0</a>. All rights reserved.</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- partial -->
+    </div>
+  </div>
+  <!-- body wrapper -->
+  <!-- plugins:js -->
+  <script src="{{ url_for('static', filename='js/material-components-web.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="{{ url_for('static', filename='js/Chart.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/progressbar.min.js') }}"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="{{ url_for('static', filename='js/misc.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/material.js') }}"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

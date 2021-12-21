@@ -1,0 +1,23 @@
+<svg width="344.3" height="50.5" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{fill:#00A9F4;}
+	.st1{fill:#1990BA;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#0B0E0F;}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle id="svg_1" r="25.3" cy="25.3" cx="25.3" class="st0"/>
+  <path id="svg_2" d="m49.7,31c-2.3,9.3 -9.4,16.9 -18.8,18.9l-14.7,-13.5l2.9,-16.1l1.6,-0.7l4.2,12.9l0.3,-1.1l0.6,-1.4l8.2,-13.4l15.7,14.4z" class="st1"/>
+  <g id="svg_3">
+   <path id="svg_4" d="m21,16.2l3.7,14.4l3.7,-14.4l5.2,0l0,19.8l-4,0l0,-5.4l0.4,-8.3l-4,13.6l-2.7,0l-4,-13.6l0.4,8.3l0,5.4l-4,0l0,-19.8l5.3,0z" class="st2"/>
+  </g>
+  <text stroke="#000" transform="matrix(5.8077545166015625,0,0,0.9260969758033752,-786.7439539432526,2.1581992534920573) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_20" y="24.15" x="166.649994" stroke-width="0" fill="#000000"/>
+  <ellipse stroke="#000" rx="9" id="svg_21" cy="32.15" cx="205.649994" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+  <text stroke="#000" transform="matrix(18.31147575378418,0,0,1,-1257.516418427229,0) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_22" y="32.15" x="72.649994" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+  <text stroke="#000" transform="matrix(1.0005852385421576,0,0,1,-4.466663336447532,0) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="32" id="svg_23" y="36.15" x="74.014098" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">实体关系标注平台</text>
+ </g>
+</svg>

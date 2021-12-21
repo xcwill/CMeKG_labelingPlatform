@@ -1,0 +1,652 @@
+{
+	"result": [
+		{
+			"data_id": 335623,
+			"content": "慢性心房颤动@##  病因学\n\n慢性心房颤动与各种心脏疾病和很多非心脏病有关。慢性心房颤动@ 在资源丰富环境中，最常见的相关临床诊断有高血压、冠状动脉疾病 (CAD) 和心肌梗死 (MI)。\n慢性心房颤动@在资源匮乏环境中，充血性心力衰竭 (CHF)、高血压和风湿性心脏瓣膜病是主要的相关疾病。慢性心房颤动@ 舒张期或收缩期心力衰竭可增加风险。\n慢性心房颤动@其他慢性心房颤动的心脏病因包括：\n\n  * 心房和心室扩张或肥大 \n\n  * 电生理异常（例如病态窦房结综合征） \n\n  * 先天性心脏病 \n\n  * 良性或恶性、原发性或转移性心脏或近心肿瘤 \n\n  * 炎症性或浸润性疾病（例如：心包炎、淀粉样变性、心肌炎） \n\n  * 年龄相关性心房心室纤维化 \n\n与慢性心房颤动相关的非心脏病包括：\n\n  * 甲状腺疾病 \n\n  * 自主神经功能障碍 \n\n  * 酒精和咖啡因滥用 \n\n  * 非心源性肺动脉高压 \n\n  * 传染病 \n\n少数情况下，慢性心房颤动可能是家族性或遗传性的，如遗传性心肌病。\n\n慢性心房颤动@##  病理生理学\n\n自最初被发现开始，目前对心房颤动病理生理学的理解是数种理论的综合。\n慢性心房颤动@心房颤动病理生理学涉及多种病因学因素和复杂的电生理变化。慢性心房颤动@在解剖学和组织学上，心房颤动通常与潜在心脏疾病造成的心房异常相关。慢性心房颤动@如心房扩张后，出现纤维化或炎症，则可能导致心房组织不应期的变化，还可能促进电折返，从而导致心房颤动。慢性心房颤动@在扩大的心房中，母波分为多个小波，同时不应期缩短和心房传导减慢，导致持续性心房颤动。慢性心房颤动@通常如果存在快速触发灶，常见于肺静脉，则可能通过颤动性传导或多折返通路引发心房颤动。慢性心房颤动@临床心血管疾病，例如高血压、CHF\n和冠状动脉疾病，通过心肌拉伸和纤维化伴细胞间偶联破坏等机制，可形成促进心房颤动的触发因素以及细胞和电重塑。\n\n慢性心房颤动@##  分类\n\n美国心脏病学会 (American College of Cardiology, ACC)、美国心脏协会 (American Heart\nAssociation, AHA)、欧洲心脏病学会 (European Society of Cardiology, ESC) 和美国心律学会 (Heart\nRhythm Society, HRS) 在心房颤动患者管理临床实践指南中，将心房颤动分为下列几种类型：\n\n  * 阵发性心房颤动：指的是在7天内可自行终止的再发性心房颤动（至少有1次以上持续≥30秒的发作） \n\n  * 持续性心房颤动：是持续时间在7天以上，或持续时间在7天以下，但需要药物或电复律的心房颤动。慢性心房颤动@ \n\n  * 长程持续性心房颤动：是持续性心房颤动的一种，指的是持续时间超过1年的心房颤动 \n\n  * 永久性心房颤动：对心脏转复方法无效的心房颤动，或者已经接受现状不打算再进行复律。慢性心房颤动@已经决定不再使用任何方法以试图恢复窦性节律，包括导管或者外科方法进行消融 \n\n  * 慢性心房颤动可以是阵发性、持续性、长程持续性或永久性的 \n\n  * 急性心房颤动是指新发的或第一次检测到的心房颤动发作，无论是否有症状。慢性心房颤动@ \n\n“单纯性心房颤动”这个术语适用于年龄＜60 岁并且无超声心动图或临床证据表明存在心脏、肺部或循环系统疾病的患者。\n慢性心房颤动@然而，因为定义各不相同，“单纯性心房颤动”这个术语有可能出现混淆，不应当用于指导治疗决策。\n\n慢性心房颤动@。",
+			"spans": [
+				{
+					"span_name": "长程持续性心房颤动",
+					"label": "疾病",
+					"start_offset": 1148,
+					"end_offset": 1157
+				},
+				{
+					"span_name": "病态窦房结综合征",
+					"label": "疾病",
+					"start_offset": 227,
+					"end_offset": 235
+				},
+				{
+					"span_name": "阵发性心房颤动",
+					"label": "疾病",
+					"start_offset": 1036,
+					"end_offset": 1043
+				},
+				{
+					"span_name": "持续性心房颤动",
+					"label": "疾病",
+					"start_offset": 678,
+					"end_offset": 685
+				},
+				{
+					"span_name": "持续性心房颤动",
+					"label": "疾病",
+					"start_offset": 1089,
+					"end_offset": 1096
+				},
+				{
+					"span_name": "持续性心房颤动",
+					"label": "疾病",
+					"start_offset": 1159,
+					"end_offset": 1166
+				},
+				{
+					"span_name": "永久性心房颤动",
+					"label": "疾病",
+					"start_offset": 1193,
+					"end_offset": 1200
+				},
+				{
+					"span_name": "充血性心力衰竭",
+					"label": "疾病",
+					"start_offset": 112,
+					"end_offset": 119
+				},
+				{
+					"span_name": "神经功能障碍",
+					"label": "疾病",
+					"start_offset": 369,
+					"end_offset": 375
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 0,
+					"end_offset": 6
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 16,
+					"end_offset": 22
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 39,
+					"end_offset": 45
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 96,
+					"end_offset": 102
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 147,
+					"end_offset": 153
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 173,
+					"end_offset": 179
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 182,
+					"end_offset": 188
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 333,
+					"end_offset": 339
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 425,
+					"end_offset": 431
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 453,
+					"end_offset": 459
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 505,
+					"end_offset": 511
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 540,
+					"end_offset": 546
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 580,
+					"end_offset": 586
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 637,
+					"end_offset": 643
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 686,
+					"end_offset": 692
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 735,
+					"end_offset": 741
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 815,
+					"end_offset": 821
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 1134,
+					"end_offset": 1140
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 1233,
+					"end_offset": 1239
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 1283,
+					"end_offset": 1289
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 1351,
+					"end_offset": 1357
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 1418,
+					"end_offset": 1424
+				},
+				{
+					"span_name": "慢性心房颤动",
+					"label": "疾病",
+					"start_offset": 1472,
+					"end_offset": 1478
+				},
+				{
+					"span_name": "急性心房颤动",
+					"label": "疾病",
+					"start_offset": 1317,
+					"end_offset": 1323
+				},
+				{
+					"span_name": "先天性心脏病",
+					"label": "疾病",
+					"start_offset": 243,
+					"end_offset": 249
+				},
+				{
+					"span_name": "淀粉样变性",
+					"label": "疾病",
+					"start_offset": 300,
+					"end_offset": 305
+				},
+				{
+					"span_name": "肺动脉高压",
+					"label": "疾病",
+					"start_offset": 401,
+					"end_offset": 406
+				},
+				{
+					"span_name": "心脏瓣膜病",
+					"label": "疾病",
+					"start_offset": 133,
+					"end_offset": 138
+				},
+				{
+					"span_name": "心血管疾病",
+					"label": "疾病",
+					"start_offset": 744,
+					"end_offset": 749
+				},
+				{
+					"span_name": "心肌梗死",
+					"label": "疾病",
+					"start_offset": 85,
+					"end_offset": 89
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 483,
+					"end_offset": 487
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 512,
+					"end_offset": 516
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 557,
+					"end_offset": 561
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 632,
+					"end_offset": 636
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 730,
+					"end_offset": 734
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 795,
+					"end_offset": 799
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 1000,
+					"end_offset": 1004
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 1017,
+					"end_offset": 1021
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 1060,
+					"end_offset": 1064
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 1129,
+					"end_offset": 1133
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 1182,
+					"end_offset": 1186
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 1211,
+					"end_offset": 1215
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 1336,
+					"end_offset": 1340
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 1365,
+					"end_offset": 1369
+				},
+				{
+					"span_name": "心房颤动",
+					"label": "疾病",
+					"start_offset": 1441,
+					"end_offset": 1445
+				},
+				{
+					"span_name": "心力衰竭",
+					"label": "疾病",
+					"start_offset": 162,
+					"end_offset": 166
+				},
+				{
+					"span_name": "高血压",
+					"label": "疾病",
+					"start_offset": 67,
+					"end_offset": 70
+				},
+				{
+					"span_name": "高血压",
+					"label": "疾病",
+					"start_offset": 126,
+					"end_offset": 129
+				},
+				{
+					"span_name": "高血压",
+					"label": "疾病",
+					"start_offset": 752,
+					"end_offset": 755
+				},
+				{
+					"span_name": "心包炎",
+					"label": "疾病",
+					"start_offset": 296,
+					"end_offset": 299
+				},
+				{
+					"span_name": "心肌病",
+					"label": "疾病",
+					"start_offset": 447,
+					"end_offset": 450
+				},
+				{
+					"span_name": "心肌炎",
+					"label": "疾病",
+					"start_offset": 306,
+					"end_offset": 309
+				},
+				{
+					"span_name": "心脏病",
+					"label": "疾病",
+					"start_offset": 33,
+					"end_offset": 36
+				},
+				{
+					"span_name": "心脏病",
+					"label": "疾病",
+					"start_offset": 189,
+					"end_offset": 192
+				},
+				{
+					"span_name": "心脏病",
+					"label": "疾病",
+					"start_offset": 343,
+					"end_offset": 346
+				},
+				{
+					"span_name": "心脏病",
+					"label": "疾病",
+					"start_offset": 832,
+					"end_offset": 835
+				},
+				{
+					"span_name": "心脏病",
+					"label": "疾病",
+					"start_offset": 919,
+					"end_offset": 922
+				},
+				{
+					"span_name": "肿瘤",
+					"label": "疾病",
+					"start_offset": 274,
+					"end_offset": 276
+				},
+				{
+					"span_name": "电生理异常",
+					"label": "症状",
+					"start_offset": 219,
+					"end_offset": 224
+				},
+				{
+					"span_name": "甲状腺",
+					"label": "症状",
+					"start_offset": 355,
+					"end_offset": 358
+				},
+				{
+					"span_name": "纤维化",
+					"label": "症状",
+					"start_offset": 326,
+					"end_offset": 329
+				},
+				{
+					"span_name": "纤维化",
+					"label": "症状",
+					"start_offset": 596,
+					"end_offset": 599
+				},
+				{
+					"span_name": "纤维化",
+					"label": "症状",
+					"start_offset": 775,
+					"end_offset": 778
+				},
+				{
+					"span_name": "肥大",
+					"label": "症状",
+					"start_offset": 210,
+					"end_offset": 212
+				},
+				{
+					"span_name": "颤动",
+					"label": "症状",
+					"start_offset": 717,
+					"end_offset": 719
+				},
+				{
+					"span_name": "快速",
+					"label": "症状",
+					"start_offset": 699,
+					"end_offset": 701
+				},
+				{
+					"span_name": "风湿",
+					"label": "症状",
+					"start_offset": 130,
+					"end_offset": 132
+				},
+				{
+					"span_name": "浸润",
+					"label": "症状",
+					"start_offset": 287,
+					"end_offset": 289
+				},
+				{
+					"span_name": "超声心动图",
+					"label": "检查",
+					"start_offset": 1387,
+					"end_offset": 1392
+				},
+				{
+					"span_name": "肺静脉",
+					"label": "部位",
+					"start_offset": 708,
+					"end_offset": 711
+				},
+				{
+					"span_name": "细胞",
+					"label": "部位",
+					"start_offset": 779,
+					"end_offset": 781
+				},
+				{
+					"span_name": "细胞",
+					"label": "部位",
+					"start_offset": 806,
+					"end_offset": 808
+				},
+				{
+					"span_name": "组织",
+					"label": "部位",
+					"start_offset": 552,
+					"end_offset": 554
+				},
+				{
+					"span_name": "组织",
+					"label": "部位",
+					"start_offset": 610,
+					"end_offset": 612
+				},
+				{
+					"span_name": "心脏",
+					"label": "部位",
+					"start_offset": 25,
+					"end_offset": 27
+				},
+				{
+					"span_name": "心脏",
+					"label": "部位",
+					"start_offset": 269,
+					"end_offset": 271
+				},
+				{
+					"span_name": "心脏",
+					"label": "部位",
+					"start_offset": 566,
+					"end_offset": 568
+				},
+				{
+					"span_name": "心脏",
+					"label": "部位",
+					"start_offset": 878,
+					"end_offset": 880
+				},
+				{
+					"span_name": "心脏",
+					"label": "部位",
+					"start_offset": 1202,
+					"end_offset": 1204
+				},
+				{
+					"span_name": "心脏",
+					"label": "部位",
+					"start_offset": 1401,
+					"end_offset": 1403
+				},
+				{
+					"span_name": "心室",
+					"label": "部位",
+					"start_offset": 205,
+					"end_offset": 207
+				},
+				{
+					"span_name": "心室",
+					"label": "部位",
+					"start_offset": 324,
+					"end_offset": 326
+				},
+				{
+					"span_name": "心肌",
+					"label": "部位",
+					"start_offset": 770,
+					"end_offset": 772
+				},
+				{
+					"span_name": "心房",
+					"label": "部位",
+					"start_offset": 202,
+					"end_offset": 204
+				},
+				{
+					"span_name": "心房",
+					"label": "部位",
+					"start_offset": 322,
+					"end_offset": 324
+				},
+				{
+					"span_name": "心房",
+					"label": "部位",
+					"start_offset": 573,
+					"end_offset": 575
+				},
+				{
+					"span_name": "心房",
+					"label": "部位",
+					"start_offset": 588,
+					"end_offset": 590
+				},
+				{
+					"span_name": "心房",
+					"label": "部位",
+					"start_offset": 608,
+					"end_offset": 610
+				},
+				{
+					"span_name": "心房",
+					"label": "部位",
+					"start_offset": 648,
+					"end_offset": 650
+				},
+				{
+					"span_name": "心房",
+					"label": "部位",
+					"start_offset": 669,
+					"end_offset": 671
+				},
+				{
+					"span_name": "动脉",
+					"label": "部位",
+					"start_offset": 73,
+					"end_offset": 75
+				},
+				{
+					"span_name": "动脉",
+					"label": "部位",
+					"start_offset": 763,
+					"end_offset": 765
+				},
+				{
+					"span_name": "指",
+					"label": "部位",
+					"start_offset": 1012,
+					"end_offset": 1013
+				},
+				{
+					"span_name": "指",
+					"label": "部位",
+					"start_offset": 1044,
+					"end_offset": 1045
+				},
+				{
+					"span_name": "指",
+					"label": "部位",
+					"start_offset": 1170,
+					"end_offset": 1171
+				},
+				{
+					"span_name": "指",
+					"label": "部位",
+					"start_offset": 1324,
+					"end_offset": 1325
+				},
+				{
+					"span_name": "指",
+					"label": "部位",
+					"start_offset": 1463,
+					"end_offset": 1464
+				},
+				{
+					"span_name": "肺",
+					"label": "部位",
+					"start_offset": 1404,
+					"end_offset": 1405
+				}
+			]
+		}
+	]
+}

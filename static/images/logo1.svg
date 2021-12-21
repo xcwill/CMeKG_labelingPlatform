@@ -1,0 +1,23 @@
+<svg width="726.1" height="140.4" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{fill:#00A9F4;}
+	.st1{fill:#1990BA;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#0B0E0F;}</style>
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="728.1" height="142.4" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle stroke="null" class="st0" cx="79.616302" cy="68.407349" r="66.542992" id="svg_1"/>
+  <path stroke="null" class="st1" d="m144.976808,71.855098c-6.450439,24.447366 -26.362665,44.425859 -52.725331,49.683357l-41.226721,-35.488112l8.133163,-42.32286l4.487262,-1.840124l11.779063,33.910863l0.841362,-2.891624l1.682723,-3.680249l22.997219,-35.225237l44.03126,37.853986z" id="svg_2"/>
+  <g stroke="null" id="svg_3">
+   <path stroke="null" class="st2" d="m64.709653,34.731048l11.87474,41.107784l11.87474,-41.107784l16.688823,0l0,56.523203l-12.837556,0l0,-15.415419l1.283756,-23.69407l-12.837556,38.824018l-8.665351,0l-12.837556,-38.824018l1.283756,23.69407l0,15.415419l-12.837556,0l0,-56.523203l17.009762,0z" id="svg_4"/>
+  </g>
+  <text fill="#000000" stroke-width="0" x="189.378227" y="67.342021" id="svg_20" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(5.8077545166015625,0,0,0.9260969758033752,-786.7439539432526,2.1581992534920573) " stroke="#000"/>
+  <ellipse fill="#000000" stroke-width="0" stroke-opacity="null" fill-opacity="null" cx="337.649994" cy="72.15" id="svg_21" rx="9" stroke="#000"/>
+  <text fill="#000000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="79.858588" y="72.15" id="svg_22" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(18.31147575378418,0,0,1,-1257.516418427229,0) " stroke="#000"/>
+  <text fill="#000000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="242.702514" y="68.030464" id="svg_23" font-size="32" font-family="Arvo, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(2.1631713647129653,0,0,2.781648455845155,-356.5881214993471,-88.59481439272867) " stroke="#000">实体关系标注平台</text>
+ </g>
+</svg>

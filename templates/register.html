@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+</head>
+<body>
+<form action="/register" method="post">
+        账号：<input name="username" type="text"/><br/>
+        邮箱：<input name="email" type="text" id="email"/><br/>
+        密码：<input name="password" type="password"/><br/>
+        确认密码：<input name="en_password" type="password"/><br/>
+        邮箱验证码：<input name="code" type="text"/><input id="send" type="button" value="发送验证码"/><br/>
+        <button type="submit">注册</button>
+</form>
+</body>
+<script>
+    $('#send').click(function () {
+        if($('#email').val() != '') {
+            $.ajax({
+                url: '/send_code',
+                type: 'POST',
+                data: {'email': $('#email').val()},
+                success: function (data) {
+                    if(data == 'success'){
+                        alert('验证码发送成功！')
+                    }else{
+                        alert('发送失败！')
+                    }
+                }
+
+            })
+        }else{
+            alert('邮箱不能为空！')
+        }
+    })
+</script>
+</html>
